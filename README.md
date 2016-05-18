@@ -1,1 +1,1 @@
-# BaitCenter
+# Ghost Event Center
