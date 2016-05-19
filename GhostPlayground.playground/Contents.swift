@@ -8,7 +8,7 @@ class PinkyGhost:Ghost {
 	static let Pinky = "This is Pinky"
 	
 	let color = "pink"
-	let speed = "fast"
+	var speed = "fast"
 	
 	init() {
 		super.init(type: PinkyGhost.Pinky)
@@ -30,11 +30,11 @@ class Listen {
 	}
 
 	@objc private func callback1(obj:PinkyGhost!){
-		print("callback #1 \(obj.color)") // intellisense ftw!!!11
+		print("callback #1: \(obj.color)") // intellisense ftw!!!11
 	}
 	
 	@objc private func callback2(obj:PinkyGhost!){
-		print("callback #2 \(obj.speed)")
+		print("callback #2: \(obj.speed)") // slow
 	}
 }
 
@@ -44,8 +44,11 @@ class Send {
 	private let ghostMan = GhostManager.getInstance
 	
 	init() {
-		// send event from different class/obj
-		ghostMan.send(PinkyGhost())
+		// send custom event from different class/obj
+		let ghost = PinkyGhost()
+		ghost.speed = "slow"
+		
+		ghostMan.send(ghost)
 	}
 }
 
