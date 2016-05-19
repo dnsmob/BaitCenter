@@ -20,6 +20,7 @@
 		923142421CECF43400B39B05 /* Ghost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ghost.swift; sourceTree = "<group>"; };
 		923142431CECF43400B39B05 /* GhostManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhostManager.swift; sourceTree = "<group>"; };
 		923142441CECF43400B39B05 /* GhostVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhostVO.swift; sourceTree = "<group>"; };
+		9258AEB01CEE3DBA00557AE1 /* GhostPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GhostPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 			children = (
 				9231422A1CECF34600B39B05 /* GhostEventCenter */,
 				923142291CECF34600B39B05 /* Products */,
+				9258AEB01CEE3DBA00557AE1 /* GhostPlayground.playground */,
 			);
 			sourceTree = "<group>";
 		};
