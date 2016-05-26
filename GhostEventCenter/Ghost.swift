@@ -12,7 +12,6 @@ public class Ghost:NSObject {
 	public init(type:String) {
 		self._type = type
 	}
-	
 }
 
 

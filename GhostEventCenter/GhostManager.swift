@@ -32,12 +32,10 @@ public class GhostManager:NSObject {
 	}
 
 	public func remove(type: String, object: AnyObject!, selector: Selector!) {
-		var array = handlers[type]
-		if (array != nil) {
-			
-			for counter in array!.count.stride(through: 1, by: -1) {
+		if let array = handlers[type] {
+			for counter in array.count.stride(through: 1, by: -1) {
 				let index = counter - 1
-				if array![index].id == ObjectIdentifier(object).uintValue.description + ":" + selector.description {
+				if array[index].id == "\(ObjectIdentifier(object).uintValue):\(selector)" {
 					handlers[type]!.removeAtIndex(index)
 					break
 				}
@@ -46,10 +44,8 @@ public class GhostManager:NSObject {
 	}
 
 	public func send(event: Ghost!) {
-		let array = handlers[event.type]
-		
-		if (array != nil) {
-			for handler in array! {
+		if let array = handlers[event.type] {
+			for handler in array {
 				handler.object.performSelector(handler.selector, withObject: event)
 			}
 		}

@@ -22,6 +22,6 @@ internal class GhostVO:NSObject {
 	internal init (object:AnyObject, selector: Selector){
 		self._obj = object
 		self._sel = selector
-		self._id = ObjectIdentifier(object).uintValue.description + ":" + selector.description
+		self._id = "\(ObjectIdentifier(object).uintValue):\(selector)"
 	}
 }
