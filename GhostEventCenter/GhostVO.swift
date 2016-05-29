@@ -4,7 +4,7 @@ import Foundation
 internal class GhostVO:NSObject {
 	
 	private var _sel:Selector
-	private var _obj:AnyObject
+	private unowned var _obj:AnyObject
 	private var _id:String
 	
 	internal var selector:Selector {

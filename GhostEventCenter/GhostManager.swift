@@ -10,7 +10,7 @@ public class GhostManager:NSObject {
 	}
 	
 	
-	private var handlers: [ String : [ GhostVO ]] = [:]
+	private var handlers = [ String : [ GhostVO ]]()
 	
 	public func listen(type: String, object: AnyObject!, selector: Selector!) {
 		let event = GhostVO(object: object, selector: selector)
