@@ -1,6 +1,4 @@
 
-import Foundation
-
 public class Ghost:NSObject {
 	
 	private var _type:String

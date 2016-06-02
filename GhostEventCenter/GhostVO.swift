@@ -1,6 +1,4 @@
 
-import Foundation
-
 internal class GhostVO:NSObject {
 	
 	private var _sel:Selector
