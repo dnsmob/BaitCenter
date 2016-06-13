@@ -44,7 +44,12 @@ public class GhostManager:NSObject {
 	public func send(event: Ghost!) {
 		if let array = handlers[event.type] {
 			for handler in array {
-				handler.object.performSelector(handler.selector, withObject: event)
+				if handler.object != nil {
+					handler.object!.performSelector(handler.selector, withObject: event)
+				}
+//				else {
+//					remove(event.type, object: handler.object, selector: handler.selector)
+//				}
 			}
 		}
 	}
