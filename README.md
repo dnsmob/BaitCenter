@@ -4,7 +4,7 @@ The objective of this project is to create a separate event center from the GDC,
       
 **What's the need for this then?**
 
-At the time of writing, the use of GDC for custom notifications isn't even possible. Plus, passing values/properties in notifications (using maybe userData dictionaries) is far from intuitive. Ghost notifications promote strong typing so it becomes more evident what to expect from custom notifications.
+At the time of writing, the use of GDC for custom notifications isn't even possible. Plus, passing values/properties in notifications (using maybe userInfo dictionaries) is far from intuitive. Ghost notifications promote strong typing so it becomes more evident what to expect from custom notifications.
      
 **So is this like an event bus? Why should I use this instead of *insert lib name* event bus?**
 
