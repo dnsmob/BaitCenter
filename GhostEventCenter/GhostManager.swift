@@ -1,5 +1,5 @@
 
-public class GhostManager:NSObject {
+final public class GhostManager:NSObject {
 
 	// SINGLETON
 	public static let getInstance = GhostManager()
