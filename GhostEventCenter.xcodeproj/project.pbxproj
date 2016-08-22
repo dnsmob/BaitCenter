@@ -21,13 +21,28 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		923021E51D6B3817003B7BB6 /* GhostEventCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923021E41D6B3817003B7BB6 /* GhostEventCenterTests.swift */; };
+		923021E71D6B3817003B7BB6 /* GhostEventCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923142281CECF34600B39B05 /* GhostEventCenter.framework */; };
 		9231422C1CECF34600B39B05 /* GhostEventCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9231422B1CECF34600B39B05 /* GhostEventCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		923142451CECF43400B39B05 /* Ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923142421CECF43400B39B05 /* Ghost.swift */; };
 		923142461CECF43400B39B05 /* GhostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923142431CECF43400B39B05 /* GhostManager.swift */; };
 		923142471CECF43400B39B05 /* GhostVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923142441CECF43400B39B05 /* GhostVO.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		923021E81D6B3817003B7BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9231421F1CECF34600B39B05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 923142271CECF34600B39B05;
+			remoteInfo = GhostEventCenter;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		923021E21D6B3817003B7BB6 /* GhostEventCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GhostEventCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		923021E41D6B3817003B7BB6 /* GhostEventCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostEventCenterTests.swift; sourceTree = "<group>"; };
+		923021E61D6B3817003B7BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		923142281CECF34600B39B05 /* GhostEventCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GhostEventCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9231422B1CECF34600B39B05 /* GhostEventCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GhostEventCenter.h; sourceTree = "<group>"; };
 		9231422D1CECF34600B39B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +54,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		923021DF1D6B3817003B7BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923021E71D6B3817003B7BB6 /* GhostEventCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		923142241CECF34600B39B05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,11 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923021E31D6B3817003B7BB6 /* GhostEventCenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				923021E41D6B3817003B7BB6 /* GhostEventCenterTests.swift */,
+				923021E61D6B3817003B7BB6 /* Info.plist */,
+			);
+			path = GhostEventCenterTests;
+			sourceTree = "<group>";
+		};
 		9231421E1CECF34600B39B05 = {
 			isa = PBXGroup;
 			children = (
 				924603621CFFF69100FEEB8E /* Foundation.framework */,
 				9231422A1CECF34600B39B05 /* GhostEventCenter */,
+				923021E31D6B3817003B7BB6 /* GhostEventCenterTests */,
 				923142291CECF34600B39B05 /* Products */,
 				9258AEB01CEE3DBA00557AE1 /* GhostPlayground.playground */,
 			);
@@ -63,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				923142281CECF34600B39B05 /* GhostEventCenter.framework */,
+				923021E21D6B3817003B7BB6 /* GhostEventCenterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +127,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		923021E11D6B3817003B7BB6 /* GhostEventCenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 923021EA1D6B3817003B7BB6 /* Build configuration list for PBXNativeTarget "GhostEventCenterTests" */;
+			buildPhases = (
+				923021DE1D6B3817003B7BB6 /* Sources */,
+				923021DF1D6B3817003B7BB6 /* Frameworks */,
+				923021E01D6B3817003B7BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				923021E91D6B3817003B7BB6 /* PBXTargetDependency */,
+			);
+			name = GhostEventCenterTests;
+			productName = GhostEventCenterTests;
+			productReference = 923021E21D6B3817003B7BB6 /* GhostEventCenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		923142271CECF34600B39B05 /* GhostEventCenter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9231423C1CECF34600B39B05 /* Build configuration list for PBXNativeTarget "GhostEventCenter" */;
@@ -121,6 +173,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = dnsmob;
 				TargetAttributes = {
+					923021E11D6B3817003B7BB6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					923142271CECF34600B39B05 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3B7X5W92ET;
@@ -144,12 +199,20 @@
 			projectRoot = "";
 			targets = (
 				923142271CECF34600B39B05 /* GhostEventCenter */,
+				923021E11D6B3817003B7BB6 /* GhostEventCenterTests */,
 				924603651CFFFA0D00FEEB8E /* Build Framework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		923021E01D6B3817003B7BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		923142261CECF34600B39B05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +239,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		923021DE1D6B3817003B7BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923021E51D6B3817003B7BB6 /* GhostEventCenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		923142231CECF34600B39B05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,7 +259,38 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		923021E91D6B3817003B7BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 923142271CECF34600B39B05 /* GhostEventCenter */;
+			targetProxy = 923021E81D6B3817003B7BB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		923021EB1D6B3817003B7BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GhostEventCenterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnsmob.GhostEventCenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		923021EC1D6B3817003B7BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GhostEventCenterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnsmob.GhostEventCenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9231423A1CECF34600B39B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,6 +447,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		923021EA1D6B3817003B7BB6 /* Build configuration list for PBXNativeTarget "GhostEventCenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923021EB1D6B3817003B7BB6 /* Debug */,
+				923021EC1D6B3817003B7BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		923142221CECF34600B39B05 /* Build configuration list for PBXProject "GhostEventCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
