@@ -1,9 +1,9 @@
 
 internal class GhostVO:NSObject {
 	
-	private var _sel:Selector
-	private weak var _obj:AnyObject?
-	private var _id:String
+	fileprivate var _sel:Selector
+	fileprivate weak var _obj:AnyObject?
+	fileprivate var _id:String
 	
 	internal var selector:Selector {
 		return _sel
@@ -20,6 +20,6 @@ internal class GhostVO:NSObject {
 	internal init (object:AnyObject, selector: Selector){
 		self._obj = object
 		self._sel = selector
-		self._id = "\(ObjectIdentifier(object).uintValue):\(selector)"
+		self._id = "\(UInt(bitPattern: ObjectIdentifier(object))):\(selector)"
 	}
 }
