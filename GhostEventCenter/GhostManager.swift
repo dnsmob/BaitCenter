@@ -30,7 +30,8 @@ final public class GhostManager:NSObject {
     }
     
     public func remove(_ type: String, object: AnyObject!, selector: Selector!) {
-        if has(type, object, selector) {
+        let (success, index) = check(type, object: object, selector: selector)
+        if success {
             handlers[type]!.remove(at: index)
         }
     }
@@ -48,16 +49,20 @@ final public class GhostManager:NSObject {
         }
     }
     
-    public func has(_ type:String, object: AnyObject!, selector: Selector!) -> Boolean {
+    private func check(_ type:String, object: AnyObject!, selector: Selector!) -> (Bool, Int) {
         if let array = handlers[type] {
             for counter in stride(from: array.count, through: 1, by: -1) {
                 let index = counter - 1
                 if array[index].id == "\(UInt(bitPattern: ObjectIdentifier(object))):\(selector)" {
-                    return true
+                    return (true, index)
                 }
             }
         }
-        return false
+        return (false, 0)
+    }
+
+    public func has(_ type:String, object: AnyObject!, selector: Selector!) -> Bool {
+        return check(type, object: object, selector: selector).0
     }
 }
 
