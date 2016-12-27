@@ -1,9 +1,9 @@
 
-open class Ghost:NSObject {
+public class Ghost:NSObject {
 	
-	fileprivate var _type:String
+	private var _type:String
 	
-	open var type:String {
+	public var type:String {
 		return _type
 	}
 	

@@ -1,9 +1,9 @@
 
 internal class GhostVO:NSObject {
 	
-	fileprivate var _sel:Selector
-	fileprivate weak var _obj:AnyObject?
-	fileprivate var _id:String
+	private var _sel:Selector
+	private weak var _obj:AnyObject?
+	private var _id:String
 	
 	internal var selector:Selector {
 		return _sel

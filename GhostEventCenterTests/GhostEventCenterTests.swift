@@ -33,12 +33,12 @@ class GhostEventCenterTests: XCTestCase {
 	}
 
 	// MARK: callbacks
-	@objc fileprivate func callback1(_ obj:Pinky!){
+	@objc private func callback1(_ obj:Pinky!){
 		print(obj.speed)
 		called1 = obj
 	}
 	
-	@objc fileprivate func callback2(_ obj:Pinky!){
+	@objc private func callback2(_ obj:Pinky!){
 		print(obj.speed)
 		called2 = obj
 	}
