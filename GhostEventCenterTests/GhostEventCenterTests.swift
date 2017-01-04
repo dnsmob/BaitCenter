@@ -1,10 +1,3 @@
-//
-//  GhostEventCenterTests.swift
-//  GhostEventCenterTests
-//
-//  Created by Denis Santos on 22/08/2016.
-//  Copyright © 2016 dnsmob. All rights reserved.
-//
 
 import XCTest
 import GhostEventCenter
@@ -47,7 +40,7 @@ class GhostEventCenterTests: XCTestCase {
 	func testNotificationExists(){
 		XCTAssertNotNil(Pinky())
 	}
-
+    
 	func testSendUnmodifiedNotification (){
 		man.listen(Pinky.Ghost, object: self, selector: #selector(callback1))
 		

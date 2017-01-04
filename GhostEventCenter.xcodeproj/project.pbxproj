@@ -26,7 +26,6 @@
 		9231422C1CECF34600B39B05 /* GhostEventCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9231422B1CECF34600B39B05 /* GhostEventCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		923142451CECF43400B39B05 /* Ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923142421CECF43400B39B05 /* Ghost.swift */; };
 		923142461CECF43400B39B05 /* GhostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923142431CECF43400B39B05 /* GhostManager.swift */; };
-		923142471CECF43400B39B05 /* GhostVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923142441CECF43400B39B05 /* GhostVO.swift */; };
 		92F12D171DE3DED300849D3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924603621CFFF69100FEEB8E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 		9231422D1CECF34600B39B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		923142421CECF43400B39B05 /* Ghost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ghost.swift; sourceTree = "<group>"; };
 		923142431CECF43400B39B05 /* GhostManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhostManager.swift; sourceTree = "<group>"; };
-		923142441CECF43400B39B05 /* GhostVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhostVO.swift; sourceTree = "<group>"; };
 		924603621CFFF69100FEEB8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9258AEB01CEE3DBA00557AE1 /* GhostPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GhostPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 			children = (
 				923142421CECF43400B39B05 /* Ghost.swift */,
 				923142431CECF43400B39B05 /* GhostManager.swift */,
-				923142441CECF43400B39B05 /* GhostVO.swift */,
 				9231422B1CECF34600B39B05 /* GhostEventCenter.h */,
 				9231422D1CECF34600B39B05 /* Info.plist */,
 			);
@@ -255,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				923142471CECF43400B39B05 /* GhostVO.swift in Sources */,
 				923142461CECF43400B39B05 /* GhostManager.swift in Sources */,
 				923142451CECF43400B39B05 /* Ghost.swift in Sources */,
 			);
