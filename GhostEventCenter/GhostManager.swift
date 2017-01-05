@@ -1,5 +1,5 @@
 
-final public class GhostManager {
+public class GhostManager {
     
     // SINGLETON
     public static let getInstance = GhostManager()
