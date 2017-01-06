@@ -41,6 +41,16 @@ class GhostEventCenterTests: XCTestCase {
 		XCTAssertNotNil(Pinky())
 	}
     
+    func testListenerExists(){
+        XCTAssertFalse(man.has(Pinky.Ghost, object: self, selector: #selector(callback1)))
+
+        man.listen(Pinky.Ghost, object: self, selector: #selector(callback1))
+        XCTAssertTrue(man.has(Pinky.Ghost, object: self, selector: #selector(callback1)))
+        
+        man.remove(Pinky.Ghost, object: self, selector: #selector(callback1))
+        XCTAssertFalse(man.has(Pinky.Ghost, object: self, selector: #selector(callback1)))
+    }
+    
 	func testSendUnmodifiedNotification (){
 		man.listen(Pinky.Ghost, object: self, selector: #selector(callback1))
 		
