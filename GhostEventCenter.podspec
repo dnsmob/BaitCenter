@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/dnsmob/GhostEventCenter"
   s.license      = "MIT"
   s.author       = { "dns sandas" => "eurodns@hotmail.com" }
-  s.platform     = :ios, "8.0"
+  s.platform     = { :ios => "8.0", :osx => "10.7", :watchos => "2.0", :tvos => "9.0" }
   s.source       = { :git => "https://github.com/dnsmob/GhostEventCenter.git" , :tag => "1.0.1" }
   s.source_files  = "GhostEventCenter", "GhostEventCenter/**/*.{h,m,swift}"
 
