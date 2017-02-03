@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GhostPlayground.playground">
+      location = "container:GhostEventCenter.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:GhostEventCenter.xcodeproj">
+      location = "group:GhostPlayground.playground">
    </FileRef>
 </Workspace>
